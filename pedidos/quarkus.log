@@ -1,0 +1,951 @@
+2022-11-22 11:47:26,599 jmedeiro-mac pedidos-dev.jar[21963] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 11:47:26,635 jmedeiro-mac pedidos-dev.jar[21963] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 11:47:26,636 jmedeiro-mac pedidos-dev.jar[21963] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 11:47:26,693 jmedeiro-mac pedidos-dev.jar[21963] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@61ef604
+2022-11-22 11:47:26,693 jmedeiro-mac pedidos-dev.jar[21963] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@624be32e
+2022-11-22 11:47:26,705 jmedeiro-mac pedidos-dev.jar[21963] ERROR [org.apa.cam.qua.mai.CamelMainRuntime] (Quarkus Main Thread) Failed to start application: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:80)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:874)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:764)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2862)
+	at org.apache.camel.quarkus.core.FastCamelContext.doInit(FastCamelContext.java:172)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2568)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2587)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:253)
+	at org.apache.camel.quarkus.main.CamelMain.doStart(CamelMain.java:94)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.quarkus.main.CamelMain.startEngine(CamelMain.java:140)
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:49)
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:45)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:968)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:850)
+	at org.apache.camel.support.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:58)
+	at org.apache.camel.reifier.AbstractReifier.resolveEndpoint(AbstractReifier.java:199)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:94)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:74)
+	... 30 more
+Caused by: org.apache.camel.PropertyBindingException: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:750)
+	at org.apache.camel.support.PropertyBindingSupport.doSetPropertyValue(PropertyBindingSupport.java:490)
+	at org.apache.camel.support.PropertyBindingSupport.doBuildPropertyOgnlPath(PropertyBindingSupport.java:342)
+	at org.apache.camel.support.PropertyBindingSupport.doBindProperties(PropertyBindingSupport.java:225)
+	at org.apache.camel.support.PropertyBindingSupport.access$100(PropertyBindingSupport.java:101)
+	at org.apache.camel.support.PropertyBindingSupport$Builder.bind(PropertyBindingSupport.java:1836)
+	at org.apache.camel.support.DefaultEndpoint.setProperties(DefaultEndpoint.java:416)
+	at org.apache.camel.support.DefaultEndpoint.configureProperties(DefaultEndpoint.java:388)
+	at org.apache.camel.support.ScheduledPollEndpoint.configureProperties(ScheduledPollEndpoint.java:115)
+	at org.apache.camel.component.jpa.JpaEndpoint.configureProperties(JpaEndpoint.java:180)
+	at org.apache.camel.support.DefaultComponent.setProperties(DefaultComponent.java:425)
+	at org.apache.camel.component.jpa.JpaComponent.createEndpoint(JpaComponent.java:161)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:934)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Could not find a suitable setter for property: entityType as there isn't a setter method with same type: java.lang.String nor type conversion possible: No type converter available to convert from type: java.lang.String to the required type: java.lang.Class with value com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.IntrospectionSupport.setProperty(IntrospectionSupport.java:845)
+	at org.apache.camel.impl.engine.DefaultBeanIntrospection.setProperty(DefaultBeanIntrospection.java:199)
+	at org.apache.camel.support.PropertyBindingSupport.doSetSimplePropertyViaReflection(PropertyBindingSupport.java:859)
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:746)
+	... 48 more
+
+2022-11-22 11:47:26,727 jmedeiro-mac pedidos-dev.jar[21963] ERROR [io.qua.run.Application] (Quarkus Main Thread) Failed to start application (with profile dev): java.lang.IllegalArgumentException: Could not find a suitable setter for property: entityType as there isn't a setter method with same type: java.lang.String nor type conversion possible: No type converter available to convert from type: java.lang.String to the required type: java.lang.Class with value com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.IntrospectionSupport.setProperty(IntrospectionSupport.java:845)
+	at org.apache.camel.impl.engine.DefaultBeanIntrospection.setProperty(DefaultBeanIntrospection.java:199)
+	at org.apache.camel.support.PropertyBindingSupport.doSetSimplePropertyViaReflection(PropertyBindingSupport.java:859)
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:746)
+	at org.apache.camel.support.PropertyBindingSupport.doSetPropertyValue(PropertyBindingSupport.java:490)
+	at org.apache.camel.support.PropertyBindingSupport.doBuildPropertyOgnlPath(PropertyBindingSupport.java:342)
+	at org.apache.camel.support.PropertyBindingSupport.doBindProperties(PropertyBindingSupport.java:225)
+	at org.apache.camel.support.PropertyBindingSupport.access$100(PropertyBindingSupport.java:101)
+	at org.apache.camel.support.PropertyBindingSupport$Builder.bind(PropertyBindingSupport.java:1836)
+	at org.apache.camel.support.DefaultEndpoint.setProperties(DefaultEndpoint.java:416)
+	at org.apache.camel.support.DefaultEndpoint.configureProperties(DefaultEndpoint.java:388)
+	at org.apache.camel.support.ScheduledPollEndpoint.configureProperties(ScheduledPollEndpoint.java:115)
+	at org.apache.camel.component.jpa.JpaEndpoint.configureProperties(JpaEndpoint.java:180)
+	at org.apache.camel.support.DefaultComponent.setProperties(DefaultComponent.java:425)
+	at org.apache.camel.component.jpa.JpaComponent.createEndpoint(JpaComponent.java:161)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:934)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:850)
+	at org.apache.camel.support.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:58)
+	at org.apache.camel.reifier.AbstractReifier.resolveEndpoint(AbstractReifier.java:199)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:94)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:74)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:874)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:764)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2862)
+	at org.apache.camel.quarkus.core.FastCamelContext.doInit(FastCamelContext.java:172)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2568)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2587)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:253)
+	at org.apache.camel.quarkus.main.CamelMain.doStart(CamelMain.java:94)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.quarkus.main.CamelMain.startEngine(CamelMain.java:140)
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:49)
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:45)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 11:47:26,729 jmedeiro-mac pedidos-dev.jar[21963] INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2022-11-22 11:47:26,897 jmedeiro-mac pedidos-dev.jar[21963] ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.dev.appstate.ApplicationStateNotification.waitForApplicationStart(ApplicationStateNotification.java:51)
+	at io.quarkus.runner.bootstrap.StartupActionImpl.runMainClass(StartupActionImpl.java:122)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:144)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:455)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:66)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:139)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:95)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:132)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:62)
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:47)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy(Unknown Source)
+	... 13 more
+Caused by: java.lang.RuntimeException: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:65)
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:45)
+	... 15 more
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:80)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:874)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:764)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2862)
+	at org.apache.camel.quarkus.core.FastCamelContext.doInit(FastCamelContext.java:172)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2568)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2587)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:253)
+	at org.apache.camel.quarkus.main.CamelMain.doStart(CamelMain.java:94)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.quarkus.main.CamelMain.startEngine(CamelMain.java:140)
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:49)
+	... 16 more
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:968)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:850)
+	at org.apache.camel.support.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:58)
+	at org.apache.camel.reifier.AbstractReifier.resolveEndpoint(AbstractReifier.java:199)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:94)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:74)
+	... 30 more
+Caused by: org.apache.camel.PropertyBindingException: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:750)
+	at org.apache.camel.support.PropertyBindingSupport.doSetPropertyValue(PropertyBindingSupport.java:490)
+	at org.apache.camel.support.PropertyBindingSupport.doBuildPropertyOgnlPath(PropertyBindingSupport.java:342)
+	at org.apache.camel.support.PropertyBindingSupport.doBindProperties(PropertyBindingSupport.java:225)
+	at org.apache.camel.support.PropertyBindingSupport.access$100(PropertyBindingSupport.java:101)
+	at org.apache.camel.support.PropertyBindingSupport$Builder.bind(PropertyBindingSupport.java:1836)
+	at org.apache.camel.support.DefaultEndpoint.setProperties(DefaultEndpoint.java:416)
+	at org.apache.camel.support.DefaultEndpoint.configureProperties(DefaultEndpoint.java:388)
+	at org.apache.camel.support.ScheduledPollEndpoint.configureProperties(ScheduledPollEndpoint.java:115)
+	at org.apache.camel.component.jpa.JpaEndpoint.configureProperties(JpaEndpoint.java:180)
+	at org.apache.camel.support.DefaultComponent.setProperties(DefaultComponent.java:425)
+	at org.apache.camel.component.jpa.JpaComponent.createEndpoint(JpaComponent.java:161)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:934)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Could not find a suitable setter for property: entityType as there isn't a setter method with same type: java.lang.String nor type conversion possible: No type converter available to convert from type: java.lang.String to the required type: java.lang.Class with value com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.IntrospectionSupport.setProperty(IntrospectionSupport.java:845)
+	at org.apache.camel.impl.engine.DefaultBeanIntrospection.setProperty(DefaultBeanIntrospection.java:199)
+	at org.apache.camel.support.PropertyBindingSupport.doSetSimplePropertyViaReflection(PropertyBindingSupport.java:859)
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:746)
+	... 48 more
+
+2022-11-22 11:47:26,902 jmedeiro-mac pedidos-dev.jar[21963] ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to recover after failed start: java.lang.RuntimeException: java.lang.RuntimeException: Unable to start HTTP server
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder.startServerAfterFailedStart(VertxHttpRecorder.java:245)
+	at io.quarkus.vertx.http.runtime.devmode.VertxHttpHotReplacementSetup.handleFailedInitialStart(VertxHttpHotReplacementSetup.java:61)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.startupFailed(RuntimeUpdatesProcessor.java:1145)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:168)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:455)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:66)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:139)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:95)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:132)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:62)
+Caused by: java.lang.RuntimeException: Unable to start HTTP server
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder.doServerStart(VertxHttpRecorder.java:624)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder.startServerAfterFailedStart(VertxHttpRecorder.java:237)
+	... 9 more
+Caused by: java.util.concurrent.ExecutionException: io.quarkus.runtime.QuarkusBindException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder.doServerStart(VertxHttpRecorder.java:590)
+	... 10 more
+Caused by: io.quarkus.runtime.QuarkusBindException
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$15.handle(VertxHttpRecorder.java:573)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder$15.handle(VertxHttpRecorder.java:566)
+	at io.vertx.core.impl.future.FutureImpl$3.onFailure(FutureImpl.java:153)
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75)
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230)
+	at io.vertx.core.impl.future.Mapping.onFailure(Mapping.java:45)
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75)
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230)
+	at io.vertx.core.impl.future.PromiseImpl.tryFail(PromiseImpl.java:23)
+	at io.vertx.core.impl.future.PromiseImpl.onFailure(PromiseImpl.java:54)
+	at io.vertx.core.impl.future.PromiseImpl.handle(PromiseImpl.java:43)
+	at io.vertx.core.impl.future.PromiseImpl.handle(PromiseImpl.java:23)
+	at io.vertx.core.impl.DeploymentManager.lambda$reportResult$2(DeploymentManager.java:136)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:63)
+	at io.vertx.core.impl.EventLoopContext.lambda$runOnContext$0(EventLoopContext.java:38)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 11:48:06,821 jmedeiro-mac pedidos-dev.jar[21998] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 11:48:08,156 jmedeiro-mac pedidos-dev.jar[21998] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 11:48:08,188 jmedeiro-mac pedidos-dev.jar[21998] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 11:48:08,189 jmedeiro-mac pedidos-dev.jar[21998] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 11:48:08,242 jmedeiro-mac pedidos-dev.jar[21998] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@2b4db1c6
+2022-11-22 11:48:08,242 jmedeiro-mac pedidos-dev.jar[21998] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@40982c2a
+2022-11-22 11:48:08,252 jmedeiro-mac pedidos-dev.jar[21998] ERROR [org.apa.cam.qua.mai.CamelMainRuntime] (Quarkus Main Thread) Failed to start application: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:80)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:874)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:764)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2862)
+	at org.apache.camel.quarkus.core.FastCamelContext.doInit(FastCamelContext.java:172)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2568)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2587)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:253)
+	at org.apache.camel.quarkus.main.CamelMain.doStart(CamelMain.java:94)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.quarkus.main.CamelMain.startEngine(CamelMain.java:140)
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:49)
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:45)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:968)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:850)
+	at org.apache.camel.support.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:58)
+	at org.apache.camel.reifier.AbstractReifier.resolveEndpoint(AbstractReifier.java:199)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:94)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:74)
+	... 30 more
+Caused by: org.apache.camel.PropertyBindingException: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:750)
+	at org.apache.camel.support.PropertyBindingSupport.doSetPropertyValue(PropertyBindingSupport.java:490)
+	at org.apache.camel.support.PropertyBindingSupport.doBuildPropertyOgnlPath(PropertyBindingSupport.java:342)
+	at org.apache.camel.support.PropertyBindingSupport.doBindProperties(PropertyBindingSupport.java:225)
+	at org.apache.camel.support.PropertyBindingSupport.access$100(PropertyBindingSupport.java:101)
+	at org.apache.camel.support.PropertyBindingSupport$Builder.bind(PropertyBindingSupport.java:1836)
+	at org.apache.camel.support.DefaultEndpoint.setProperties(DefaultEndpoint.java:416)
+	at org.apache.camel.support.DefaultEndpoint.configureProperties(DefaultEndpoint.java:388)
+	at org.apache.camel.support.ScheduledPollEndpoint.configureProperties(ScheduledPollEndpoint.java:115)
+	at org.apache.camel.component.jpa.JpaEndpoint.configureProperties(JpaEndpoint.java:180)
+	at org.apache.camel.support.DefaultComponent.setProperties(DefaultComponent.java:425)
+	at org.apache.camel.component.jpa.JpaComponent.createEndpoint(JpaComponent.java:161)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:934)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Could not find a suitable setter for property: entityType as there isn't a setter method with same type: java.lang.String nor type conversion possible: No type converter available to convert from type: java.lang.String to the required type: java.lang.Class with value com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.IntrospectionSupport.setProperty(IntrospectionSupport.java:845)
+	at org.apache.camel.impl.engine.DefaultBeanIntrospection.setProperty(DefaultBeanIntrospection.java:199)
+	at org.apache.camel.support.PropertyBindingSupport.doSetSimplePropertyViaReflection(PropertyBindingSupport.java:859)
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:746)
+	... 48 more
+
+2022-11-22 11:48:08,270 jmedeiro-mac pedidos-dev.jar[21998] ERROR [io.qua.run.Application] (Quarkus Main Thread) Failed to start application (with profile dev): java.lang.IllegalArgumentException: Could not find a suitable setter for property: entityType as there isn't a setter method with same type: java.lang.String nor type conversion possible: No type converter available to convert from type: java.lang.String to the required type: java.lang.Class with value com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.IntrospectionSupport.setProperty(IntrospectionSupport.java:845)
+	at org.apache.camel.impl.engine.DefaultBeanIntrospection.setProperty(DefaultBeanIntrospection.java:199)
+	at org.apache.camel.support.PropertyBindingSupport.doSetSimplePropertyViaReflection(PropertyBindingSupport.java:859)
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:746)
+	at org.apache.camel.support.PropertyBindingSupport.doSetPropertyValue(PropertyBindingSupport.java:490)
+	at org.apache.camel.support.PropertyBindingSupport.doBuildPropertyOgnlPath(PropertyBindingSupport.java:342)
+	at org.apache.camel.support.PropertyBindingSupport.doBindProperties(PropertyBindingSupport.java:225)
+	at org.apache.camel.support.PropertyBindingSupport.access$100(PropertyBindingSupport.java:101)
+	at org.apache.camel.support.PropertyBindingSupport$Builder.bind(PropertyBindingSupport.java:1836)
+	at org.apache.camel.support.DefaultEndpoint.setProperties(DefaultEndpoint.java:416)
+	at org.apache.camel.support.DefaultEndpoint.configureProperties(DefaultEndpoint.java:388)
+	at org.apache.camel.support.ScheduledPollEndpoint.configureProperties(ScheduledPollEndpoint.java:115)
+	at org.apache.camel.component.jpa.JpaEndpoint.configureProperties(JpaEndpoint.java:180)
+	at org.apache.camel.support.DefaultComponent.setProperties(DefaultComponent.java:425)
+	at org.apache.camel.component.jpa.JpaComponent.createEndpoint(JpaComponent.java:161)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:934)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:850)
+	at org.apache.camel.support.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:58)
+	at org.apache.camel.reifier.AbstractReifier.resolveEndpoint(AbstractReifier.java:199)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:94)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:74)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:874)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:764)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2862)
+	at org.apache.camel.quarkus.core.FastCamelContext.doInit(FastCamelContext.java:172)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2568)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2587)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:253)
+	at org.apache.camel.quarkus.main.CamelMain.doStart(CamelMain.java:94)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.quarkus.main.CamelMain.startEngine(CamelMain.java:140)
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:49)
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:45)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 11:48:08,274 jmedeiro-mac pedidos-dev.jar[21998] INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2022-11-22 11:48:08,375 jmedeiro-mac pedidos-dev.jar[21998] ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.dev.appstate.ApplicationStateNotification.waitForApplicationStart(ApplicationStateNotification.java:51)
+	at io.quarkus.runner.bootstrap.StartupActionImpl.runMainClass(StartupActionImpl.java:122)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:144)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:455)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:66)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:139)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:95)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:132)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:62)
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:47)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.CamelBootstrapProcessor$boot173480958.deploy(Unknown Source)
+	... 13 more
+Caused by: java.lang.RuntimeException: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:65)
+	at org.apache.camel.quarkus.core.CamelBootstrapRecorder.start(CamelBootstrapRecorder.java:45)
+	... 15 more
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route pullPedidosOutbox: Route(pullPedidosOutbox)[From[jpa:com.redhat.demo.PedidoOutb... because of Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:80)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:874)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:764)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2862)
+	at org.apache.camel.quarkus.core.FastCamelContext.doInit(FastCamelContext.java:172)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2568)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2587)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:253)
+	at org.apache.camel.quarkus.main.CamelMain.doStart(CamelMain.java:94)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.quarkus.main.CamelMain.startEngine(CamelMain.java:140)
+	at org.apache.camel.quarkus.main.CamelMainRuntime.start(CamelMainRuntime.java:49)
+	... 16 more
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox due to: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:968)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:850)
+	at org.apache.camel.support.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:58)
+	at org.apache.camel.reifier.AbstractReifier.resolveEndpoint(AbstractReifier.java:199)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:94)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:74)
+	... 30 more
+Caused by: org.apache.camel.PropertyBindingException: Error binding property (entityType=com.redhat.demo.PedidoOutbox) with name: entityType on bean: jpa://com.redhat.demo.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.PedidoOutbox&namedQuery=getPedidosOutbox with value: com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:750)
+	at org.apache.camel.support.PropertyBindingSupport.doSetPropertyValue(PropertyBindingSupport.java:490)
+	at org.apache.camel.support.PropertyBindingSupport.doBuildPropertyOgnlPath(PropertyBindingSupport.java:342)
+	at org.apache.camel.support.PropertyBindingSupport.doBindProperties(PropertyBindingSupport.java:225)
+	at org.apache.camel.support.PropertyBindingSupport.access$100(PropertyBindingSupport.java:101)
+	at org.apache.camel.support.PropertyBindingSupport$Builder.bind(PropertyBindingSupport.java:1836)
+	at org.apache.camel.support.DefaultEndpoint.setProperties(DefaultEndpoint.java:416)
+	at org.apache.camel.support.DefaultEndpoint.configureProperties(DefaultEndpoint.java:388)
+	at org.apache.camel.support.ScheduledPollEndpoint.configureProperties(ScheduledPollEndpoint.java:115)
+	at org.apache.camel.component.jpa.JpaEndpoint.configureProperties(JpaEndpoint.java:180)
+	at org.apache.camel.support.DefaultComponent.setProperties(DefaultComponent.java:425)
+	at org.apache.camel.component.jpa.JpaComponent.createEndpoint(JpaComponent.java:161)
+	at org.apache.camel.support.DefaultComponent.createEndpoint(DefaultComponent.java:171)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:934)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: Could not find a suitable setter for property: entityType as there isn't a setter method with same type: java.lang.String nor type conversion possible: No type converter available to convert from type: java.lang.String to the required type: java.lang.Class with value com.redhat.demo.PedidoOutbox
+	at org.apache.camel.support.IntrospectionSupport.setProperty(IntrospectionSupport.java:845)
+	at org.apache.camel.impl.engine.DefaultBeanIntrospection.setProperty(DefaultBeanIntrospection.java:199)
+	at org.apache.camel.support.PropertyBindingSupport.doSetSimplePropertyViaReflection(PropertyBindingSupport.java:859)
+	at org.apache.camel.support.PropertyBindingSupport.setSimplePropertyViaReflection(PropertyBindingSupport.java:746)
+	... 48 more
+
+2022-11-22 11:48:49,287 jmedeiro-mac pedidos-dev.jar[22038] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 11:48:50,661 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 11:48:50,690 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 11:48:50,691 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 11:48:50,742 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@2ef4b818
+2022-11-22 11:48:50,743 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@62355b45
+2022-11-22 11:48:51,050 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-22 11:48:51,050 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-22 11:48:51,050 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-22 11:48:51,050 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-22 11:48:51,051 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-22 11:48:51,051 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-22 11:48:51,051 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-22 11:48:51,051 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-22 11:48:51,052 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-22 11:48:51,052 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-22 11:48:51,111 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-22 11:48:51,112 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 11:48:51,112 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 384ms (build:0ms init:85ms start:299ms)
+2022-11-22 11:48:51,179 jmedeiro-mac pedidos-dev.jar[22038] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) Failed to validate Schema: Schema-validation: missing table [public.tb_pedidos_outbox]
+2022-11-22 11:48:51,208 jmedeiro-mac pedidos-dev.jar[22038] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) The following SQL may resolve the database issues, as generated by the Hibernate schema migration tool. WARNING: You must manually verify this SQL is correct, this is a best effort guess, do not copy/paste it without verifying that it does what you expect.
+
+create table public.tb_pedidos_outbox (id int8 not null, pedidoId int8, processado boolean, primary key (id));
+create table CAMEL_MESSAGEPROCESSED (id int8 not null, createdAt timestamp, messageId varchar(255), processorName varchar(255), primary key (id));
+alter table if exists CAMEL_MESSAGEPROCESSED drop constraint if exists UK3gjvyad9j4kd1xeog8xws0skp;
+alter table if exists CAMEL_MESSAGEPROCESSED add constraint UK3gjvyad9j4kd1xeog8xws0skp unique (processorName, messageId);
+
+2022-11-22 11:48:51,229 jmedeiro-mac pedidos-dev.jar[22038] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.844s. Listening on: http://localhost:8081
+2022-11-22 11:48:51,229 jmedeiro-mac pedidos-dev.jar[22038] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 11:48:51,230 jmedeiro-mac pedidos-dev.jar[22038] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]
+2022-11-22 11:48:52,168 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) SQL Error: 0, SQLState: 42P01
+2022-11-22 11:48:52,169 jmedeiro-mac pedidos-dev.jar[22038] ERROR [org.hib.eng.jdb.spi.SqlExceptionHelper] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) ERROR: relation "public.tb_pedidos_outbox" does not exist
+  Position: 119
+2022-11-22 11:48:52,184 jmedeiro-mac pedidos-dev.jar[22038] WARN  [org.apa.cam.com.jpa.JpaConsumer] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Consumer Consumer[jpa://com.redhat.demo.model.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.model.PedidoOutbox&namedQuery=getPedidosOutbox] failed polling endpoint: jpa://com.redhat.demo.model.PedidoOutbox?consumeDelete=false&delay=30000&entityType=com.redhat.demo.model.PedidoOutbox&namedQuery=getPedidosOutbox. Will try again at next poll. Caused by: [javax.persistence.PersistenceException - javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet]: javax.persistence.PersistenceException: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.apache.camel.component.jpa.JpaConsumer.poll(JpaConsumer.java:167)
+	at org.apache.camel.support.ScheduledPollConsumer.doRun(ScheduledPollConsumer.java:202)
+	at org.apache.camel.support.ScheduledPollConsumer.run(ScheduledPollConsumer.java:116)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1626)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.apache.camel.component.jpa.JpaConsumer$1.doInTransaction(JpaConsumer.java:119)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.apache.camel.component.jpa.JpaConsumer.poll(JpaConsumer.java:107)
+	... 8 more
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2322)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2075)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	... 12 more
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.tb_pedidos_outbox" does not exist
+  Position: 119
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:118)
+	at io.agroal.pool.wrapper.PreparedStatementWrapper.executeQuery(PreparedStatementWrapper.java:78)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	... 27 more
+
+2022-11-22 11:49:09,248 jmedeiro-mac pedidos-dev.jar[22038] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in PedidoOutbox.class.
+2022-11-22 11:49:09,251 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-22 11:49:09,259 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:1 stopped:1)
+2022-11-22 11:49:09,259 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 11:49:09,261 jmedeiro-mac pedidos-dev.jar[22038] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 10ms (uptime:18s448ms)
+2022-11-22 11:49:09,276 jmedeiro-mac pedidos-dev.jar[22038] INFO  [io.quarkus] (Quarkus Main Thread) pedidos stopped in 0.026s
+2022-11-22 11:49:25,295 jmedeiro-mac pedidos-dev.jar[22082] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 11:49:26,617 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 11:49:26,672 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 11:49:26,673 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 11:49:26,746 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@680e7f65
+2022-11-22 11:49:26,746 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@5014aaa9
+2022-11-22 11:49:27,034 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-22 11:49:27,034 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-22 11:49:27,035 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-22 11:49:27,035 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-22 11:49:27,035 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-22 11:49:27,035 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-22 11:49:27,036 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-22 11:49:27,036 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-22 11:49:27,036 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-22 11:49:27,036 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-22 11:49:27,085 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-22 11:49:27,086 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 11:49:27,086 jmedeiro-mac pedidos-dev.jar[22082] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 362ms (build:0ms init:99ms start:263ms)
+2022-11-22 11:49:27,147 jmedeiro-mac pedidos-dev.jar[22082] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) Failed to validate Schema: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+2022-11-22 11:49:27,169 jmedeiro-mac pedidos-dev.jar[22082] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) The following SQL may resolve the database issues, as generated by the Hibernate schema migration tool. WARNING: You must manually verify this SQL is correct, this is a best effort guess, do not copy/paste it without verifying that it does what you expect.
+
+create table CAMEL_MESSAGEPROCESSED (id int8 not null, createdAt timestamp, messageId varchar(255), processorName varchar(255), primary key (id));
+alter table if exists CAMEL_MESSAGEPROCESSED drop constraint if exists UK3gjvyad9j4kd1xeog8xws0skp;
+alter table if exists CAMEL_MESSAGEPROCESSED add constraint UK3gjvyad9j4kd1xeog8xws0skp unique (processorName, messageId);
+
+2022-11-22 11:49:27,178 jmedeiro-mac pedidos-dev.jar[22082] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.717s. Listening on: http://localhost:8081
+2022-11-22 11:49:27,179 jmedeiro-mac pedidos-dev.jar[22082] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 11:49:27,179 jmedeiro-mac pedidos-dev.jar[22082] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]
+2022-11-22 11:49:28,150 jmedeiro-mac pedidos-dev.jar[22082] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-22 11:49:28,186 jmedeiro-mac pedidos-dev.jar[22082] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":1} to kafka
+2022-11-22 11:49:28,283 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | producer-1) [Producer clientId=producer-1] Error while fetching metadata with correlation id 3 : {pedidos-recebidos=LEADER_NOT_AVAILABLE}
+2022-11-22 11:49:28,398 jmedeiro-mac pedidos-dev.jar[22082] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | producer-1) [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {pedidos-recebidos=LEADER_NOT_AVAILABLE}
+2022-11-22 11:49:28,561 jmedeiro-mac pedidos-dev.jar[22082] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #2 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":1} sent to kafka
+2022-11-22 11:49:28,564 jmedeiro-mac pedidos-dev.jar[22082] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-22 11:49:28,565 jmedeiro-mac pedidos-dev.jar[22082] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":3} to kafka
+2022-11-22 11:49:28,570 jmedeiro-mac pedidos-dev.jar[22082] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #3 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":3} sent to kafka
+2022-11-22 17:56:50,199 jmedeiro-mac pedidos-dev.jar[30182] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:56:51,551 jmedeiro-mac pedidos-dev.jar[30182] ERROR [io.qua.run.Application] (Quarkus Main Thread) Failed to start application (with profile dev): org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:129)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:74)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:71)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:138)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 17:56:51,555 jmedeiro-mac pedidos-dev.jar[30182] INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2022-11-22 17:56:51,682 jmedeiro-mac pedidos-dev.jar[30182] ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.dev.appstate.ApplicationStateNotification.waitForApplicationStart(ApplicationStateNotification.java:51)
+	at io.quarkus.runner.bootstrap.StartupActionImpl.runMainClass(StartupActionImpl.java:122)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:144)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:455)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:66)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:139)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:95)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:132)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:62)
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: javax.persistence.PersistenceException: [PersistenceUnit: <default>] Unable to build Hibernate SessionFactory
+	at io.quarkus.hibernate.orm.runtime.JPAConfig.startAll(JPAConfig.java:68)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig_Subclass.startAll$$superforward1(Unknown Source)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig_Subclass$$function$$4.apply(Unknown Source)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:54)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.proceed(InvocationInterceptor.java:62)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.monitor(InvocationInterceptor.java:51)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor_Bean.intercept(Unknown Source)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig_Subclass.startAll(Unknown Source)
+	at io.quarkus.hibernate.orm.runtime.HibernateOrmRecorder.startAllPersistenceUnits(HibernateOrmRecorder.java:97)
+	at io.quarkus.deployment.steps.HibernateOrmProcessor$startPersistenceUnits1868654632.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.HibernateOrmProcessor$startPersistenceUnits1868654632.deploy(Unknown Source)
+	... 13 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: <default>] Unable to build Hibernate SessionFactory
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.persistenceException(FastBootEntityManagerFactoryBuilder.java:116)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:76)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:71)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:138)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:54)
+	... 1 more
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:129)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:74)
+	... 6 more
+
+2022-11-22 18:12:24,318 jmedeiro-mac pedidos-dev.jar[30933] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:12:25,745 jmedeiro-mac pedidos-dev.jar[30933] ERROR [io.qua.run.Application] (Quarkus Main Thread) Failed to start application (with profile dev): org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:129)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:74)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:71)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:138)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 18:12:25,748 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.qua.dep.dev.IsolatedDevModeMain] (main) Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2022-11-22 18:12:25,860 jmedeiro-mac pedidos-dev.jar[30933] ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.dev.appstate.ApplicationStateNotification.waitForApplicationStart(ApplicationStateNotification.java:51)
+	at io.quarkus.runner.bootstrap.StartupActionImpl.runMainClass(StartupActionImpl.java:122)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:144)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:455)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:66)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:139)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:95)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:132)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:62)
+Caused by: java.lang.RuntimeException: Failed to start quarkus
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:41)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:120)
+	at io.quarkus.runner.GeneratedMain.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$1.run(StartupActionImpl.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: javax.persistence.PersistenceException: [PersistenceUnit: <default>] Unable to build Hibernate SessionFactory
+	at io.quarkus.hibernate.orm.runtime.JPAConfig.startAll(JPAConfig.java:68)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig_Subclass.startAll$$superforward1(Unknown Source)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig_Subclass$$function$$4.apply(Unknown Source)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:54)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.proceed(InvocationInterceptor.java:62)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.monitor(InvocationInterceptor.java:51)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor_Bean.intercept(Unknown Source)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig_Subclass.startAll(Unknown Source)
+	at io.quarkus.hibernate.orm.runtime.HibernateOrmRecorder.startAllPersistenceUnits(HibernateOrmRecorder.java:97)
+	at io.quarkus.deployment.steps.HibernateOrmProcessor$startPersistenceUnits1868654632.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.HibernateOrmProcessor$startPersistenceUnits1868654632.deploy(Unknown Source)
+	... 13 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: <default>] Unable to build Hibernate SessionFactory
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.persistenceException(FastBootEntityManagerFactoryBuilder.java:116)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:76)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:71)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:138)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:54)
+	... 1 more
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:129)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:200)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:74)
+	... 6 more
+
+2022-11-22 18:12:44,412 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) File change detected: /Users/jmedeiro/Documents/projects/redhat/pizza-demo/pedidos/src/main/resources/application.properties
+2022-11-22 18:12:44,417 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in application.properties.
+2022-11-22 18:12:45,081 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:12:45,118 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:12:45,119 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 18:12:45,177 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@138febdb
+2022-11-22 18:12:45,177 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@2257c6c1
+2022-11-22 18:12:45,492 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-22 18:12:45,492 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-22 18:12:45,493 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-22 18:12:45,493 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-22 18:12:45,493 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-22 18:12:45,493 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-22 18:12:45,494 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-22 18:12:45,494 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-22 18:12:45,494 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-22 18:12:45,494 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-22 18:12:45,564 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-22 18:12:45,564 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 18:12:45,564 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 405ms (build:0ms init:93ms start:312ms)
+2022-11-22 18:12:45,575 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 1.154s. Listening on: http://localhost:8081
+2022-11-22 18:12:45,576 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:12:45,576 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]
+2022-11-22 18:12:45,578 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 1.168s 
+2022-11-22 18:12:45,606 jmedeiro-mac pedidos-dev.jar[30933] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) Failed to validate Schema: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+2022-11-22 18:12:45,630 jmedeiro-mac pedidos-dev.jar[30933] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) The following SQL may resolve the database issues, as generated by the Hibernate schema migration tool. WARNING: You must manually verify this SQL is correct, this is a best effort guess, do not copy/paste it without verifying that it does what you expect.
+
+create table CAMEL_MESSAGEPROCESSED (id int8 not null, createdAt timestamp, messageId varchar(255), processorName varchar(255), primary key (id));
+alter table if exists CAMEL_MESSAGEPROCESSED drop constraint if exists UK3gjvyad9j4kd1xeog8xws0skp;
+alter table if exists CAMEL_MESSAGEPROCESSED add constraint UK3gjvyad9j4kd1xeog8xws0skp unique (processorName, messageId);
+
+2022-11-22 18:12:46,636 jmedeiro-mac pedidos-dev.jar[30933] INFO  [pullPedidosOutbox] (Camel (camel-2) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-22 18:12:46,673 jmedeiro-mac pedidos-dev.jar[30933] INFO  [pullPedidosOutbox] (Camel (camel-2) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":1} to kafka
+2022-11-22 18:12:46,716 jmedeiro-mac pedidos-dev.jar[30933] INFO  [pullPedidosOutbox] (Camel (camel-2) thread #2 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":1} sent to kafka
+2022-11-22 18:12:59,116 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in PedidoOutbox.class.
+2022-11-22 18:12:59,118 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) shutting down
+2022-11-22 18:12:59,126 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:1 stopped:1)
+2022-11-22 18:12:59,127 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 18:12:59,128 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) shutdown in 10ms (uptime:13s876ms)
+2022-11-22 18:12:59,135 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) pedidos stopped in 0.019s
+2022-11-22 18:12:59,710 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:12:59,714 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:12:59,714 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 18:12:59,717 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@370463d
+2022-11-22 18:12:59,717 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@c0df678
+2022-11-22 18:12:59,725 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-22 18:12:59,726 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-22 18:12:59,726 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-22 18:12:59,726 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-22 18:12:59,726 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-22 18:12:59,726 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-22 18:12:59,727 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-22 18:12:59,727 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-22 18:12:59,727 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-22 18:12:59,727 jmedeiro-mac pedidos-dev.jar[30933] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-22 18:12:59,729 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-22 18:12:59,730 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 18:12:59,730 jmedeiro-mac pedidos-dev.jar[30933] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-3) started in 14ms (build:0ms init:4ms start:10ms)
+2022-11-22 18:12:59,743 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 0.605s. Listening on: http://localhost:8081
+2022-11-22 18:12:59,744 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:12:59,744 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]
+2022-11-22 18:12:59,744 jmedeiro-mac pedidos-dev.jar[30933] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 1.315s 
+2022-11-22 18:12:59,772 jmedeiro-mac pedidos-dev.jar[30933] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) Failed to validate Schema: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+2022-11-22 18:12:59,790 jmedeiro-mac pedidos-dev.jar[30933] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) The following SQL may resolve the database issues, as generated by the Hibernate schema migration tool. WARNING: You must manually verify this SQL is correct, this is a best effort guess, do not copy/paste it without verifying that it does what you expect.
+
+create table CAMEL_MESSAGEPROCESSED (id int8 not null, createdAt timestamp, messageId varchar(255), processorName varchar(255), primary key (id));
+alter table if exists CAMEL_MESSAGEPROCESSED drop constraint if exists UK3gjvyad9j4kd1xeog8xws0skp;
+alter table if exists CAMEL_MESSAGEPROCESSED add constraint UK3gjvyad9j4kd1xeog8xws0skp unique (processorName, messageId);
+
+2022-11-22 18:13:21,588 jmedeiro-mac pedidos-dev.jar[30972] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:13:23,050 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:13:23,080 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:13:23,081 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-22 18:13:23,141 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@52e76bc7
+2022-11-22 18:13:23,141 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@7c0dfb35
+2022-11-22 18:13:23,456 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-22 18:13:23,468 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-22 18:13:23,470 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-22 18:13:23,488 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-22 18:13:23,489 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-22 18:13:23,508 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-22 18:13:23,509 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-22 18:13:23,509 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-22 18:13:23,509 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-22 18:13:23,510 jmedeiro-mac pedidos-dev.jar[30972] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-22 18:13:23,573 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-22 18:13:23,573 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-22 18:13:23,573 jmedeiro-mac pedidos-dev.jar[30972] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 451ms (build:0ms init:95ms start:356ms)
+2022-11-22 18:13:23,660 jmedeiro-mac pedidos-dev.jar[30972] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) Failed to validate Schema: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+2022-11-22 18:13:23,692 jmedeiro-mac pedidos-dev.jar[30972] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) The following SQL may resolve the database issues, as generated by the Hibernate schema migration tool. WARNING: You must manually verify this SQL is correct, this is a best effort guess, do not copy/paste it without verifying that it does what you expect.
+
+create table CAMEL_MESSAGEPROCESSED (id int8 not null, createdAt timestamp, messageId varchar(255), processorName varchar(255), primary key (id));
+alter table if exists CAMEL_MESSAGEPROCESSED drop constraint if exists UK3gjvyad9j4kd1xeog8xws0skp;
+alter table if exists CAMEL_MESSAGEPROCESSED add constraint UK3gjvyad9j4kd1xeog8xws0skp unique (processorName, messageId);
+
+2022-11-22 18:13:23,698 jmedeiro-mac pedidos-dev.jar[30972] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 5.897s. Listening on: http://localhost:8081
+2022-11-22 18:13:23,699 jmedeiro-mac pedidos-dev.jar[30972] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:13:23,699 jmedeiro-mac pedidos-dev.jar[30972] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]
+2022-11-22 18:14:24,696 jmedeiro-mac pedidos-dev.jar[30972] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-22 18:14:24,743 jmedeiro-mac pedidos-dev.jar[30972] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":3} to kafka
+2022-11-22 18:14:24,802 jmedeiro-mac pedidos-dev.jar[30972] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #2 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":3} sent to kafka
+2022-11-23 08:37:20,048 jmedeiro-mac pedidos-dev.jar[31951] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 08:37:21,299 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 08:37:21,329 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 08:37:21,330 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-23 08:37:21,379 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@74c55cc2
+2022-11-23 08:37:21,380 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@d304b7b
+2022-11-23 08:37:21,677 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-23 08:37:21,677 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-23 08:37:21,678 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-23 08:37:21,678 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-23 08:37:21,678 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-23 08:37:21,678 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-23 08:37:21,678 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-23 08:37:21,679 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-23 08:37:21,679 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-23 08:37:21,679 jmedeiro-mac pedidos-dev.jar[31951] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-23 08:37:21,723 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-23 08:37:21,724 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-23 08:37:21,724 jmedeiro-mac pedidos-dev.jar[31951] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 360ms (build:0ms init:81ms start:279ms)
+2022-11-23 08:37:21,786 jmedeiro-mac pedidos-dev.jar[31951] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) Failed to validate Schema: Schema-validation: missing table [CAMEL_MESSAGEPROCESSED]
+2022-11-23 08:37:21,809 jmedeiro-mac pedidos-dev.jar[31951] ERROR [io.qua.hib.orm.run.sch.SchemaManagementIntegrator] (Hibernate post-boot validation thread for <default>) The following SQL may resolve the database issues, as generated by the Hibernate schema migration tool. WARNING: You must manually verify this SQL is correct, this is a best effort guess, do not copy/paste it without verifying that it does what you expect.
+
+create table CAMEL_MESSAGEPROCESSED (id int8 not null, createdAt timestamp, messageId varchar(255), processorName varchar(255), primary key (id));
+alter table if exists CAMEL_MESSAGEPROCESSED drop constraint if exists UK3gjvyad9j4kd1xeog8xws0skp;
+alter table if exists CAMEL_MESSAGEPROCESSED add constraint UK3gjvyad9j4kd1xeog8xws0skp unique (processorName, messageId);
+
+2022-11-23 08:37:21,813 jmedeiro-mac pedidos-dev.jar[31951] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 5.177s. Listening on: http://localhost:8081
+2022-11-23 08:37:21,814 jmedeiro-mac pedidos-dev.jar[31951] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 08:37:21,814 jmedeiro-mac pedidos-dev.jar[31951] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]
+2022-11-23 09:13:53,277 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:13:53,357 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":1} to kafka
+2022-11-23 09:13:53,449 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #2 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":1} sent to kafka
+2022-11-23 09:30:23,830 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:30:23,860 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":3} to kafka
+2022-11-23 09:30:23,888 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #3 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":3} sent to kafka
+2022-11-23 09:32:23,931 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:32:23,934 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":5} to kafka
+2022-11-23 09:32:23,946 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #4 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":5} sent to kafka
+2022-11-23 09:32:23,947 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:32:23,948 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":7} to kafka
+2022-11-23 09:32:23,958 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #5 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":7} sent to kafka
+2022-11-23 09:32:53,980 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:32:53,982 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":9} to kafka
+2022-11-23 09:32:53,987 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #6 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":9} sent to kafka
+2022-11-23 09:33:24,006 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:33:24,007 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":11} to kafka
+2022-11-23 09:33:24,016 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #7 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":11} sent to kafka
+2022-11-23 09:34:24,038 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:34:24,039 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":13} to kafka
+2022-11-23 09:34:24,050 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #8 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":13} sent to kafka
+2022-11-23 09:38:24,040 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:38:24,049 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":15} to kafka
+2022-11-23 09:38:24,538 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #9 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":15} sent to kafka
+2022-11-23 09:50:24,720 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:50:24,727 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":17} to kafka
+2022-11-23 09:50:24,749 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #10 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":17} sent to kafka
+2022-11-23 09:52:24,774 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:52:24,776 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":19} to kafka
+2022-11-23 09:52:24,781 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #11 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":19} sent to kafka
+2022-11-23 09:55:54,850 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 09:55:54,858 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":21} to kafka
+2022-11-23 09:55:54,891 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #12 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":21} sent to kafka
+2022-11-23 10:08:55,123 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:08:55,145 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":23} to kafka
+2022-11-23 10:08:55,174 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #13 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":23} sent to kafka
+2022-11-23 10:20:55,346 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:20:55,362 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":25} to kafka
+2022-11-23 10:20:55,383 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #14 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":25} sent to kafka
+2022-11-23 10:23:25,476 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:23:25,486 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":27} to kafka
+2022-11-23 10:23:25,501 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #15 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":27} sent to kafka
+2022-11-23 10:31:25,788 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:31:25,800 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":1} to kafka
+2022-11-23 10:31:25,817 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #16 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":1} sent to kafka
+2022-11-23 10:32:55,871 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:32:55,911 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":3} to kafka
+2022-11-23 10:32:55,935 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #17 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":3} sent to kafka
+2022-11-23 10:39:56,052 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:39:56,061 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":5} to kafka
+2022-11-23 10:39:56,087 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #18 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":5} sent to kafka
+2022-11-23 10:41:26,115 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:41:26,117 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":7} to kafka
+2022-11-23 10:41:26,123 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #19 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":7} sent to kafka
+2022-11-23 10:42:56,147 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:42:56,150 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":9} to kafka
+2022-11-23 10:42:56,156 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #20 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":9} sent to kafka
+2022-11-23 10:44:26,183 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Pedidos outbox gettered from datasource
+2022-11-23 10:44:26,186 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #1 - jpa://com.redhat.demo.model.PedidoOutbox) Sending Pedido Outbox: {"pedidoId":11} to kafka
+2022-11-23 10:44:26,194 jmedeiro-mac pedidos-dev.jar[31951] INFO  [pullPedidosOutbox] (Camel (camel-1) thread #21 - KafkaProducer[pedidos-recebidos]) Pedido Outbox: {"pedidoId":11} sent to kafka
+2022-11-23 11:40:47,246 jmedeiro-mac pedidos-dev.jar[38032] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:40:50,421 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 11:40:50,478 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 11:40:50,480 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.component.kafka.brokers=localhost:29092
+2022-11-23 11:40:50,567 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using EntityManagerFactory found in registry with id [null] org.hibernate.internal.SessionFactoryImpl@6c14eba6
+2022-11-23 11:40:50,567 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.com.jpa.JpaComponent] (Quarkus Main Thread) Using TransactionManager configured on this component: org.springframework.transaction.jta.JtaTransactionManager@718e0d1e
+2022-11-23 11:40:51,050 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.window.factor' was supplied but isn't a known config.
+2022-11-23 11:40:51,050 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.kinit.cmd' was supplied but isn't a known config.
+2022-11-23 11:40:51,051 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.ticket.renew.jitter' was supplied but isn't a known config.
+2022-11-23 11:40:51,052 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keystore.type' was supplied but isn't a known config.
+2022-11-23 11:40:51,053 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.trustmanager.algorithm' was supplied but isn't a known config.
+2022-11-23 11:40:51,053 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'sasl.kerberos.min.time.before.relogin' was supplied but isn't a known config.
+2022-11-23 11:40:51,054 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.protocol' was supplied but isn't a known config.
+2022-11-23 11:40:51,055 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.enabled.protocols' was supplied but isn't a known config.
+2022-11-23 11:40:51,055 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.truststore.type' was supplied but isn't a known config.
+2022-11-23 11:40:51,056 jmedeiro-mac pedidos-dev.jar[38032] WARN  [org.apa.kaf.cli.pro.ProducerConfig] (Quarkus Main Thread) The configuration 'ssl.keymanager.algorithm' was supplied but isn't a known config.
+2022-11-23 11:40:51,137 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:1 started:1)
+2022-11-23 11:40:51,137 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started pullPedidosOutbox (jpa://com.redhat.demo.model.PedidoOutbox)
+2022-11-23 11:40:51,138 jmedeiro-mac pedidos-dev.jar[38032] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 594ms (build:0ms init:133ms start:461ms)
+2022-11-23 11:40:51,308 jmedeiro-mac pedidos-dev.jar[38032] INFO  [io.quarkus] (Quarkus Main Thread) pedidos 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 12.237s. Listening on: http://localhost:8081
+2022-11-23 11:40:51,309 jmedeiro-mac pedidos-dev.jar[38032] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 11:40:51,310 jmedeiro-mac pedidos-dev.jar[38032] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-jackson, camel-jpa, camel-kafka, camel-platform-http, camel-rest, cdi, hibernate-orm, jdbc-postgresql, kafka-client, kubernetes, narayana-jta, smallrye-context-propagation, vertx]

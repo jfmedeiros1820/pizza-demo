@@ -1,0 +1,824 @@
+2022-11-21 18:08:09,125 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-21 18:08:09,128 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-21 18:08:09,129 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-21 18:08:09,154 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-21 18:08:09,154 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route11 (rest-api:///api/api-doc)
+2022-11-21 18:08:09,154 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route12 (rest://post:/api/pedidos)
+2022-11-21 18:08:09,155 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-21 18:08:09,155 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-6) started in 9ms (build:0ms init:7ms start:2ms)
+2022-11-21 18:08:09,156 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 0.766s. Listening on: http://localhost:8080
+2022-11-21 18:08:09,156 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-21 18:08:09,156 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-21 18:08:09,157 jmedeiro-mac pizza-store-dev.jar[15715] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 0.787s 
+2022-11-22 11:38:58,923 jmedeiro-mac pizza-store-dev.jar[21512] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 11:38:58,924 jmedeiro-mac pizza-store-dev.jar[21512] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 11:38:58,924 jmedeiro-mac pizza-store-dev.jar[21512] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 11:39:00,347 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 11:39:00,376 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 11:39:00,378 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 11:39:00,673 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 11:39:00,673 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 11:39:00,674 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 11:39:00,674 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 11:39:00,674 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 218ms (build:0ms init:83ms start:135ms)
+2022-11-22 11:39:00,780 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.763s. Listening on: http://localhost:8080
+2022-11-22 11:39:00,782 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 11:39:00,782 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 17:36:39,299 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in Pedido.class.
+2022-11-22 17:36:39,350 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-22 17:36:39,364 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 17:36:39,366 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-22 17:36:39,366 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-22 17:36:39,367 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 17:36:39,390 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 40ms (uptime:5h57m38s)
+2022-11-22 17:36:39,454 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.139s
+2022-11-22 17:36:40,749 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 17:36:40,754 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 17:36:40,755 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 17:36:40,784 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 17:36:40,784 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route3 (rest-api:///api/api-doc)
+2022-11-22 17:36:40,785 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route4 (rest://post:/api/pedidos)
+2022-11-22 17:36:40,785 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 17:36:40,785 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 15ms (build:0ms init:11ms start:4ms)
+2022-11-22 17:36:40,787 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 1.323s. Listening on: http://localhost:8080
+2022-11-22 17:36:40,787 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 17:36:40,787 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 17:36:40,788 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 2.864s 
+2022-11-22 17:37:17,279 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in NewPedidoDTO.class.
+2022-11-22 17:37:17,280 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) shutting down
+2022-11-22 17:37:17,281 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 17:37:17,281 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route3 (rest-api:///api/api-doc)
+2022-11-22 17:37:17,282 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route4 (rest://post:/api/pedidos)
+2022-11-22 17:37:17,282 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 17:37:17,283 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) shutdown in 3ms (uptime:36s502ms)
+2022-11-22 17:37:17,289 jmedeiro-mac pizza-store-dev.jar[21512] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.010s
+2022-11-22 17:57:52,819 jmedeiro-mac pizza-store-dev.jar[30239] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:57:52,819 jmedeiro-mac pizza-store-dev.jar[30239] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:57:52,819 jmedeiro-mac pizza-store-dev.jar[30239] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:57:54,319 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 17:57:54,346 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 17:57:54,347 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 17:57:54,600 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 17:57:54,601 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 17:57:54,601 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 17:57:54,601 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 17:57:54,601 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 192ms (build:0ms init:79ms start:113ms)
+2022-11-22 17:57:54,704 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.601s. Listening on: http://localhost:8080
+2022-11-22 17:57:54,704 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 17:57:54,705 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 17:58:40,217 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) File change detected: /Users/jmedeiro/Documents/projects/redhat/pizza-demo/pizza-store/src/main/resources/import.sql
+2022-11-22 17:58:40,219 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in import.sql.
+2022-11-22 17:58:40,222 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-22 17:58:40,225 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 17:58:40,226 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-22 17:58:40,226 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-22 17:58:40,226 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 17:58:40,228 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 6ms (uptime:45s740ms)
+2022-11-22 17:58:40,254 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.033s
+2022-11-22 17:58:40,893 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 17:58:40,897 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 17:58:40,897 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 17:58:40,921 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 17:58:40,921 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route3 (rest-api:///api/api-doc)
+2022-11-22 17:58:40,921 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route4 (rest://post:/api/pedidos)
+2022-11-22 17:58:40,922 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 17:58:40,922 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 12ms (build:0ms init:8ms start:4ms)
+2022-11-22 17:58:40,923 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 0.665s. Listening on: http://localhost:8080
+2022-11-22 17:58:40,924 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 17:58:40,924 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 17:58:40,924 jmedeiro-mac pizza-store-dev.jar[30239] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 0.710s 
+2022-11-22 17:59:04,033 jmedeiro-mac pizza-store-dev.jar[30296] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:59:04,033 jmedeiro-mac pizza-store-dev.jar[30296] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:59:04,033 jmedeiro-mac pizza-store-dev.jar[30296] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 17:59:05,416 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 17:59:05,442 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 17:59:05,443 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 17:59:05,686 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 17:59:05,687 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 17:59:05,687 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 17:59:05,687 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 17:59:05,687 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 185ms (build:0ms init:72ms start:113ms)
+2022-11-22 17:59:05,776 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.212s. Listening on: http://localhost:8080
+2022-11-22 17:59:05,777 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 17:59:05,777 jmedeiro-mac pizza-store-dev.jar[30296] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:00:50,586 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:00:50,586 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:00:50,586 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:00:51,926 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:00:51,927 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:00:51,932 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:00:51,933 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:00:51,935 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:00:51,936 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:00:51,938 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:00:51,938 jmedeiro-mac pizza-store-dev.jar[30549] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:00:52,005 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:00:52,032 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:00:52,033 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:00:52,272 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:00:52,272 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 18:00:52,272 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 18:00:52,273 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:00:52,273 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 182ms (build:0ms init:69ms start:113ms)
+2022-11-22 18:00:52,359 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.403s. Listening on: http://localhost:8080
+2022-11-22 18:00:52,360 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:00:52,360 jmedeiro-mac pizza-store-dev.jar[30549] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:04:24,174 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:04:24,174 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:04:24,174 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:04:25,530 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:04:25,530 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:04:25,534 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:04:25,535 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:04:25,537 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:04:25,537 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:04:25,540 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:04:25,540 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:04:25,625 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:04:25,655 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:04:25,657 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:04:25,953 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:04:25,954 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 18:04:25,954 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 18:04:25,954 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:04:25,955 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 206ms (build:0ms init:84ms start:122ms)
+2022-11-22 18:04:26,074 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 6.844s. Listening on: http://localhost:8080
+2022-11-22 18:04:26,074 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:04:26,075 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:04:30,392 jmedeiro-mac pizza-store-dev.jar[30630] ERROR [org.apa.cam.pro.err.DefaultErrorHandler] (vert.x-worker-thread-0) Failed delivery for (MessageId: 02ED8DECCB97CEB-0000000000000000 on ExchangeId: 02ED8DECCB97CEB-0000000000000000). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[platform-http:///api/pedidos?httpMethodRestrict=POST%2COPTIONS]          ] [        74]
+	...
+[route2            ] [to2               ] [direct:create-pedido                                                          ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.deser.impl.UnsupportedTypeDeserializer.deserialize(UnsupportedTypeDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:313)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2051)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1427)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1442)
+	at org.apache.camel.component.jackson.AbstractJacksonDataFormat.unmarshal(AbstractJacksonDataFormat.java:188)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:64)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:83)
+	at org.apache.camel.support.AsyncProcessorSupport.process(AsyncProcessorSupport.java:41)
+	at org.apache.camel.processor.RestBindingAdvice.unmarshal(RestBindingAdvice.java:307)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:142)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:51)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:341)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 18:04:30,394 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.apa.cam.com.pla.htt.ver.VertxPlatformHttpConsumer] (vert.x-eventloop-thread-9) Failed handling platform-http endpoint /api/pedidos. Caused by: [com.fasterxml.jackson.databind.exc.InvalidDefinitionException - Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.deser.impl.UnsupportedTypeDeserializer.deserialize(UnsupportedTypeDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:313)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2051)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1427)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1442)
+	at org.apache.camel.component.jackson.AbstractJacksonDataFormat.unmarshal(AbstractJacksonDataFormat.java:188)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:64)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:83)
+	at org.apache.camel.support.AsyncProcessorSupport.process(AsyncProcessorSupport.java:41)
+	at org.apache.camel.processor.RestBindingAdvice.unmarshal(RestBindingAdvice.java:307)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:142)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:51)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:341)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 18:06:16,204 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in PedidoResource.class.
+2022-11-22 18:06:16,211 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-22 18:06:16,215 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 18:06:16,215 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-22 18:06:16,216 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-22 18:06:16,216 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 18:06:16,218 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 7ms (uptime:1m50s)
+2022-11-22 18:06:16,245 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.038s
+2022-11-22 18:06:17,260 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:17,261 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:06:17,267 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:17,267 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:06:17,269 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:17,269 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:06:17,272 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:17,272 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:06:17,321 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:06:17,326 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:06:17,327 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:06:17,354 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:06:17,354 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route3 (rest-api:///api/api-doc)
+2022-11-22 18:06:17,355 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route4 (rest://post:/api/pedidos)
+2022-11-22 18:06:17,355 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:06:17,355 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 10ms (build:0ms init:8ms start:2ms)
+2022-11-22 18:06:17,357 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 1.106s. Listening on: http://localhost:8080
+2022-11-22 18:06:17,357 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:06:17,357 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:06:17,357 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 1.877s 
+2022-11-22 18:06:27,674 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in PedidoService.class.
+2022-11-22 18:06:27,675 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) shutting down
+2022-11-22 18:06:27,677 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 18:06:27,677 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route3 (rest-api:///api/api-doc)
+2022-11-22 18:06:27,677 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route4 (rest://post:/api/pedidos)
+2022-11-22 18:06:27,677 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 18:06:27,678 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) shutdown in 3ms (uptime:10s325ms)
+2022-11-22 18:06:27,683 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.008s
+2022-11-22 18:06:28,279 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:28,280 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:06:28,286 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:28,287 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:06:28,291 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:28,291 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:06:28,296 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:28,296 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:06:28,390 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:06:28,396 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:06:28,397 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:06:28,482 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:06:28,482 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route5 (rest-api:///api/api-doc)
+2022-11-22 18:06:28,483 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route6 (rest://post:/api/pedidos)
+2022-11-22 18:06:28,483 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:06:28,483 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-3) started in 66ms (build:0ms init:16ms start:50ms)
+2022-11-22 18:06:28,485 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 0.796s. Listening on: http://localhost:8080
+2022-11-22 18:06:28,485 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:06:28,485 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:06:28,486 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 0.987s 
+2022-11-22 18:06:31,662 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in PedidoResource.class.
+2022-11-22 18:06:31,664 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-3) shutting down
+2022-11-22 18:06:31,665 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 18:06:31,666 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route5 (rest-api:///api/api-doc)
+2022-11-22 18:06:31,666 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route6 (rest://post:/api/pedidos)
+2022-11-22 18:06:31,666 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 18:06:31,667 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-3) shutdown in 3ms (uptime:3s234ms)
+2022-11-22 18:06:31,687 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.025s
+2022-11-22 18:06:32,804 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:32,805 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:06:32,811 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:32,811 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:06:32,815 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:32,815 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:06:32,817 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:06:32,818 jmedeiro-mac pizza-store-dev.jar[30630] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:06:32,884 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:06:32,888 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:06:32,889 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:06:32,916 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:06:32,916 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route7 (rest-api:///api/api-doc)
+2022-11-22 18:06:32,916 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route8 (rest://post:/api/pedidos)
+2022-11-22 18:06:32,916 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:06:32,916 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-4) started in 8ms (build:0ms init:5ms start:3ms)
+2022-11-22 18:06:32,918 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 1.200s. Listening on: http://localhost:8080
+2022-11-22 18:06:32,918 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:06:32,918 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:06:32,918 jmedeiro-mac pizza-store-dev.jar[30630] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 1.412s 
+2022-11-22 18:06:58,228 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:06:58,229 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:06:58,229 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:07:00,203 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:07:00,203 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:07:00,215 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:07:00,216 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:07:00,223 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:07:00,224 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:07:00,229 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:07:00,230 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:07:00,365 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:07:00,399 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:07:00,400 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:07:00,910 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:07:00,911 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 18:07:00,911 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 18:07:00,912 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:07:00,912 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 414ms (build:0ms init:124ms start:290ms)
+2022-11-22 18:07:01,058 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 6.565s. Listening on: http://localhost:8080
+2022-11-22 18:07:01,059 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:07:01,059 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:07:10,596 jmedeiro-mac pizza-store-dev.jar[30703] ERROR [org.apa.cam.pro.err.DefaultErrorHandler] (vert.x-worker-thread-0) Failed delivery for (MessageId: 5B109B0B089757C-0000000000000000 on ExchangeId: 5B109B0B089757C-0000000000000000). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[platform-http:///api/pedidos?httpMethodRestrict=POST%2COPTIONS]          ] [        66]
+	...
+[route2            ] [to2               ] [direct:create-pedido                                                          ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.deser.impl.UnsupportedTypeDeserializer.deserialize(UnsupportedTypeDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:313)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2051)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1427)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1442)
+	at org.apache.camel.component.jackson.AbstractJacksonDataFormat.unmarshal(AbstractJacksonDataFormat.java:188)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:64)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:83)
+	at org.apache.camel.support.AsyncProcessorSupport.process(AsyncProcessorSupport.java:41)
+	at org.apache.camel.processor.RestBindingAdvice.unmarshal(RestBindingAdvice.java:307)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:142)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:51)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:341)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 18:07:10,599 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.apa.cam.com.pla.htt.ver.VertxPlatformHttpConsumer] (vert.x-eventloop-thread-16) Failed handling platform-http endpoint /api/pedidos. Caused by: [com.fasterxml.jackson.databind.exc.InvalidDefinitionException - Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (ByteArrayInputStream); line: 6, column: 14] (through reference chain: com.redhat.demo.model.NewPedidoDTO["dueDate"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1904)
+	at com.fasterxml.jackson.databind.deser.impl.UnsupportedTypeDeserializer.deserialize(UnsupportedTypeDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:313)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2051)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1427)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1442)
+	at org.apache.camel.component.jackson.AbstractJacksonDataFormat.unmarshal(AbstractJacksonDataFormat.java:188)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:64)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:83)
+	at org.apache.camel.support.AsyncProcessorSupport.process(AsyncProcessorSupport.java:41)
+	at org.apache.camel.processor.RestBindingAdvice.unmarshal(RestBindingAdvice.java:307)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:142)
+	at org.apache.camel.processor.RestBindingAdvice.before(RestBindingAdvice.java:51)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:341)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-22 18:10:09,055 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in AbstractRestRouteBuilder.class.
+2022-11-22 18:10:09,059 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-22 18:10:09,063 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 18:10:09,064 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-22 18:10:09,064 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-22 18:10:09,064 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 18:10:09,066 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 7ms (uptime:3m8s)
+2022-11-22 18:10:09,097 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.039s
+2022-11-22 18:10:09,700 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:09,700 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:10:09,705 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:09,705 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:10:09,708 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:09,708 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:10:09,710 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:09,710 jmedeiro-mac pizza-store-dev.jar[30703] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:10:09,755 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:10:09,759 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:10:09,759 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:10:09,788 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:10:09,789 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route3 (rest-api:///api/api-doc)
+2022-11-22 18:10:09,789 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route4 (rest://post:/api/pedidos)
+2022-11-22 18:10:09,789 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:10:09,789 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 13ms (build:0ms init:10ms start:3ms)
+2022-11-22 18:10:09,791 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 0.688s. Listening on: http://localhost:8080
+2022-11-22 18:10:09,791 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:10:09,791 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:10:09,791 jmedeiro-mac pizza-store-dev.jar[30703] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 0.932s 
+2022-11-22 18:10:24,665 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:10:24,665 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:10:24,665 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:10:26,318 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:26,318 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:10:26,325 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:26,325 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:10:26,328 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:26,328 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:10:26,331 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:10:26,332 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:10:26,414 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:10:26,441 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:10:26,442 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:10:26,784 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:10:26,785 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 18:10:26,785 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 18:10:26,785 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:10:26,786 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 266ms (build:0ms init:108ms start:158ms)
+2022-11-22 18:10:26,884 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 5.687s. Listening on: http://localhost:8080
+2022-11-22 18:10:26,884 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:10:26,885 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:10:31,181 jmedeiro-mac pizza-store-dev.jar[30853] ERROR [org.apa.cam.pro.err.DefaultErrorHandler] (vert.x-worker-thread-0) Failed delivery for (MessageId: 808244C02422E49-0000000000000000 on ExchangeId: 808244C02422E49-0000000000000000). Exhausted after delivery attempt: 1 caught: org.apache.camel.InvalidPayloadException: No body available of type: java.io.InputStream but has value: com.redhat.demo.model.NewPedidoDTO@2f84a35e of type: com.redhat.demo.model.NewPedidoDTO on: Message. Caused by: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e. Exchange[]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[platform-http:///api/pedidos?httpMethodRestrict=POST%2COPTIONS]          ] [        79]
+	...
+[route-create-pedid] [unmarshal1        ] [unmarshal[org.apache.camel.model.DataFormatDefinition@1967c551]               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+: org.apache.camel.InvalidPayloadException: No body available of type: java.io.InputStream but has value: com.redhat.demo.model.NewPedidoDTO@2f84a35e of type: com.redhat.demo.model.NewPedidoDTO on: Message. Caused by: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e. Exchange[]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e]
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:125)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:58)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:471)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:193)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:398)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.camel.NoTypeConversionAvailableException: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e
+	at org.apache.camel.impl.converter.CoreTypeConverterRegistry.mandatoryConvertTo(CoreTypeConverterRegistry.java:275)
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:123)
+	... 17 more
+
+2022-11-22 18:10:31,184 jmedeiro-mac pizza-store-dev.jar[30853] WARN  [org.apa.cam.com.pla.htt.ver.VertxPlatformHttpConsumer] (vert.x-eventloop-thread-5) Failed handling platform-http endpoint /api/pedidos. Caused by: [org.apache.camel.InvalidPayloadException - No body available of type: java.io.InputStream but has value: com.redhat.demo.model.NewPedidoDTO@2f84a35e of type: com.redhat.demo.model.NewPedidoDTO on: Message. Caused by: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e. Exchange[]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e]]: org.apache.camel.InvalidPayloadException: No body available of type: java.io.InputStream but has value: com.redhat.demo.model.NewPedidoDTO@2f84a35e of type: com.redhat.demo.model.NewPedidoDTO on: Message. Caused by: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e. Exchange[]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e]
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:125)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:58)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:471)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:193)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:398)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.camel.NoTypeConversionAvailableException: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e
+	at org.apache.camel.impl.converter.CoreTypeConverterRegistry.mandatoryConvertTo(CoreTypeConverterRegistry.java:275)
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:123)
+	... 17 more
+
+2022-11-22 18:10:31,189 jmedeiro-mac pizza-store-dev.jar[30853] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (vert.x-eventloop-thread-5) HTTP Request to /api/pedidos failed, error id: 1986f5f5-9724-4481-9146-e01ecb466655-1: org.apache.camel.InvalidPayloadException: No body available of type: java.io.InputStream but has value: com.redhat.demo.model.NewPedidoDTO@2f84a35e of type: com.redhat.demo.model.NewPedidoDTO on: Message. Caused by: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e. Exchange[]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e]
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:125)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:58)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:471)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:193)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:398)
+	at org.apache.camel.component.platform.http.vertx.VertxPlatformHttpConsumer.lambda$handleRequest$2(VertxPlatformHttpConsumer.java:190)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$0(ContextImpl.java:159)
+	at io.vertx.core.impl.AbstractContext.dispatch(AbstractContext.java:100)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:157)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.camel.NoTypeConversionAvailableException: No type converter available to convert from type: com.redhat.demo.model.NewPedidoDTO to the required type: java.io.InputStream with value com.redhat.demo.model.NewPedidoDTO@2f84a35e
+	at org.apache.camel.impl.converter.CoreTypeConverterRegistry.mandatoryConvertTo(CoreTypeConverterRegistry.java:275)
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:123)
+	... 17 more
+
+2022-11-22 18:11:08,253 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in PedidoService.class.
+2022-11-22 18:11:08,257 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-22 18:11:08,260 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-22 18:11:08,260 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-22 18:11:08,261 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-22 18:11:08,261 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-22 18:11:08,263 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 6ms (uptime:41s635ms)
+2022-11-22 18:11:08,287 jmedeiro-mac pizza-store-dev.jar[30853] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.031s
+2022-11-22 18:11:23,431 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:11:23,431 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:11:23,431 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-22 18:11:24,886 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:11:24,887 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-22 18:11:24,894 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:11:24,894 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-22 18:11:24,898 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:11:24,898 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-22 18:11:24,901 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-22 18:11:24,901 jmedeiro-mac pizza-store-dev.jar[30898] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-22 18:11:24,992 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-22 18:11:25,021 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-22 18:11:25,022 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-22 18:11:25,358 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-22 18:11:25,359 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-22 18:11:25,359 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-22 18:11:25,359 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-22 18:11:25,360 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 271ms (build:0ms init:111ms start:160ms)
+2022-11-22 18:11:25,458 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 5.627s. Listening on: http://localhost:8080
+2022-11-22 18:11:25,459 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-22 18:11:25,459 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-22 18:11:42,772 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-22 18:11:58,548 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-22T18:11:42.084569 :: ### 
+2022-11-22 18:11:58,551 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 22-11-2022 18:11:58 :: ### 
+2022-11-22 18:11:58,579 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-22 18:14:18,082 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-22 18:14:18,126 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-22T18:14:18.081996 :: ### 
+2022-11-22 18:14:18,126 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 22-11-2022 18:14:18 :: ### 
+2022-11-22 18:14:18,144 jmedeiro-mac pizza-store-dev.jar[30898] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 08:37:17,969 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 08:37:17,970 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 08:37:17,970 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 08:37:20,070 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 08:37:20,070 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 08:37:20,077 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 08:37:20,078 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 08:37:20,080 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 08:37:20,081 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 08:37:20,084 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 08:37:20,084 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 08:37:20,171 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 08:37:20,199 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 08:37:20,200 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 08:37:20,510 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 08:37:20,511 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-23 08:37:20,511 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-23 08:37:20,511 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 08:37:20,512 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 239ms (build:0ms init:86ms start:153ms)
+2022-11-23 08:37:20,617 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 7.936s. Listening on: http://localhost:8080
+2022-11-23 08:37:20,618 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 08:37:20,619 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-23 09:13:28,135 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:13:28,478 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:13:28.135626 :: ### 
+2022-11-23 09:13:28,479 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:13:28 :: ### 
+2022-11-23 09:13:28,507 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:29:57,946 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:29:58,065 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:29:57.946680 :: ### 
+2022-11-23 09:29:58,066 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:29:58 :: ### 
+2022-11-23 09:29:58,081 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:31:56,188 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:31:56,198 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:31:56.188288 :: ### 
+2022-11-23 09:31:56,198 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:31:56 :: ### 
+2022-11-23 09:31:56,213 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:32:05,306 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:32:05,315 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:32:05.306827 :: ### 
+2022-11-23 09:32:05,316 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:32:05 :: ### 
+2022-11-23 09:32:05,324 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:32:24,580 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:32:24,586 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:32:24.580981 :: ### 
+2022-11-23 09:32:24,586 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:32:24 :: ### 
+2022-11-23 09:32:24,597 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:33:15,001 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:33:15,027 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:33:15.001279 :: ### 
+2022-11-23 09:33:15,027 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:33:15 :: ### 
+2022-11-23 09:33:15,069 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:34:16,331 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:34:16,337 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:34:16.331753 :: ### 
+2022-11-23 09:34:16,338 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:34:16 :: ### 
+2022-11-23 09:34:16,346 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:38:22,546 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:38:22,573 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:38:22.546440 :: ### 
+2022-11-23 09:38:22,574 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:38:22 :: ### 
+2022-11-23 09:38:22,591 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:50:02,352 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:50:02,435 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:50:02.352241 :: ### 
+2022-11-23 09:50:02,436 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:50:02 :: ### 
+2022-11-23 09:50:02,446 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:52:03,550 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:52:03,556 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:52:03.550411 :: ### 
+2022-11-23 09:52:03,556 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:52:03 :: ### 
+2022-11-23 09:52:03,563 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 09:55:39,548 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 09:55:39,581 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T09:55:39.548268 :: ### 
+2022-11-23 09:55:39,583 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 09:55:39 :: ### 
+2022-11-23 09:55:39,595 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:08:38,495 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:08:38,591 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:08:38.495510 :: ### 
+2022-11-23 10:08:38,592 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:08:38 :: ### 
+2022-11-23 10:08:38,601 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:20:33,387 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:20:33,462 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:20:33.387240 :: ### 
+2022-11-23 10:20:33,463 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:20:33 :: ### 
+2022-11-23 10:20:33,477 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:23:20,607 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:23:20,648 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:23:20.607209 :: ### 
+2022-11-23 10:23:20,649 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:23:20 :: ### 
+2022-11-23 10:23:20,662 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:26:44,899 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in NewPedidoDTO.class.
+2022-11-23 10:26:44,923 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-23 10:26:44,930 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-23 10:26:44,931 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-23 10:26:44,931 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-23 10:26:44,931 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-23 10:26:44,942 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 19ms (uptime:1h49m24s)
+2022-11-23 10:26:44,993 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.082s
+2022-11-23 10:26:46,107 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:26:46,107 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 10:26:46,113 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:26:46,114 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 10:26:46,116 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:26:46,116 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 10:26:46,119 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:26:46,119 jmedeiro-mac pizza-store-dev.jar[31944] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 10:26:46,182 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 10:26:46,190 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 10:26:46,191 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 10:26:46,247 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 10:26:46,248 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route3 (rest-api:///api/api-doc)
+2022-11-23 10:26:46,248 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route4 (rest://post:/api/pedidos)
+2022-11-23 10:26:46,248 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 10:26:46,248 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 28ms (build:0ms init:18ms start:10ms)
+2022-11-23 10:26:46,252 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 1.243s. Listening on: http://localhost:8080
+2022-11-23 10:26:46,252 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 10:26:46,253 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-23 10:26:46,253 jmedeiro-mac pizza-store-dev.jar[31944] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 1.645s 
+2022-11-23 10:30:49,794 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 10:30:49,794 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 10:30:49,794 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 10:30:51,110 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:30:51,110 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 10:30:51,117 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:30:51,117 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 10:30:51,119 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:30:51,120 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 10:30:51,122 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:30:51,123 jmedeiro-mac pizza-store-dev.jar[36149] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 10:30:51,216 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 10:30:51,249 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 10:30:51,250 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 10:30:51,534 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 10:30:51,534 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-23 10:30:51,534 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-23 10:30:51,534 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 10:30:51,535 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 223ms (build:0ms init:79ms start:144ms)
+2022-11-23 10:30:51,624 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.917s. Listening on: http://localhost:8080
+2022-11-23 10:30:51,624 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 10:30:51,625 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-23 10:31:12,601 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:31:12,809 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:31:12.601241 :: ### 
+2022-11-23 10:31:12,809 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:31:12 :: ### 
+2022-11-23 10:31:12,830 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:32:40,333 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:32:40,357 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:32:40.333194 :: ### 
+2022-11-23 10:32:40,358 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:32:40 :: ### 
+2022-11-23 10:32:40,370 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:39:37,590 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:39:37,639 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:39:37.590897 :: ### 
+2022-11-23 10:39:37,641 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:39:37 :: ### 
+2022-11-23 10:39:37,673 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:40:56,990 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:40:57,003 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:40:56.990330 :: ### 
+2022-11-23 10:40:57,004 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:40:57 :: ### 
+2022-11-23 10:40:57,017 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:42:44,588 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:42:44,605 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:42:44.588846 :: ### 
+2022-11-23 10:42:44,606 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:42:44 :: ### 
+2022-11-23 10:42:44,621 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:44:03,472 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Processing pedido ... ### 
+2022-11-23 10:44:03,484 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Inicio Route :: 2022-11-23T10:44:03.472562 :: ### 
+2022-11-23 10:44:03,484 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [com.red.dem.pro.CreatePedidoProcessor] (vert.x-worker-thread-0) ### Data Final Route :: 23-11-2022 10:44:03 :: ### 
+2022-11-23 10:44:03,494 jmedeiro-mac pizza-store-dev.jar[36149] INFO  [route-create-pedido] (vert.x-worker-thread-0) Camel runs on jmedeiro-mac
+2022-11-23 10:47:55,899 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 10:47:55,899 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 10:47:55,899 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 10:47:57,543 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:47:57,543 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 10:47:57,550 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:47:57,550 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 10:47:57,553 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:47:57,553 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 10:47:57,556 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:47:57,557 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 10:47:57,649 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 10:47:57,677 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 10:47:57,678 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 10:47:57,973 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 10:47:57,973 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-23 10:47:57,974 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-23 10:47:57,974 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 10:47:57,974 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 232ms (build:0ms init:81ms start:151ms)
+2022-11-23 10:47:58,066 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.886s. Listening on: http://localhost:8080
+2022-11-23 10:47:58,067 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 10:47:58,067 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-23 10:48:56,005 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Restarting quarkus due to changes in NewPedidoDTO.class, PedidoService.class.
+2022-11-23 10:48:56,009 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutting down
+2022-11-23 10:48:56,013 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes stopped (total:3 stopped:3)
+2022-11-23 10:48:56,013 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route1 (rest-api:///api/api-doc)
+2022-11-23 10:48:56,013 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route2 (rest://post:/api/pedidos)
+2022-11-23 10:48:56,014 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Stopped route-create-pedido (direct://create-pedido)
+2022-11-23 10:48:56,016 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) shutdown in 7ms (uptime:58s193ms)
+2022-11-23 10:48:56,050 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store stopped in 0.042s
+2022-11-23 10:48:56,874 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:48:56,874 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 10:48:56,880 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:48:56,881 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 10:48:56,885 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:48:56,886 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 10:48:56,889 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 10:48:56,891 jmedeiro-mac pizza-store-dev.jar[36867] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 10:48:56,958 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 10:48:56,962 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 10:48:56,963 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 10:48:56,988 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 10:48:56,988 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route3 (rest-api:///api/api-doc)
+2022-11-23 10:48:56,989 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route4 (rest://post:/api/pedidos)
+2022-11-23 10:48:56,989 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 10:48:56,989 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-2) started in 13ms (build:0ms init:9ms start:4ms)
+2022-11-23 10:48:56,990 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 0.935s. Listening on: http://localhost:8080
+2022-11-23 10:48:56,991 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 10:48:56,991 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-23 10:48:56,991 jmedeiro-mac pizza-store-dev.jar[36867] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (Timer-0) Live reload total time: 1.695s 
+2022-11-23 11:02:52,087 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:02:52,087 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:02:52,088 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:02:53,326 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:02:53,326 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 11:02:53,333 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:02:53,333 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 11:02:53,335 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:02:53,336 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 11:02:53,338 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:02:53,338 jmedeiro-mac pizza-store-dev.jar[37259] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 11:02:53,431 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 11:02:53,455 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 11:02:53,457 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 11:02:53,725 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 11:02:53,726 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-23 11:02:53,726 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-23 11:02:53,726 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 11:02:53,727 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 209ms (build:0ms init:68ms start:141ms)
+2022-11-23 11:02:53,818 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 4.583s. Listening on: http://localhost:8080
+2022-11-23 11:02:53,819 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 11:02:53,819 jmedeiro-mac pizza-store-dev.jar[37259] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2022-11-23 11:40:46,283 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.openapi.expose.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:40:46,284 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.health.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:40:46,284 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.camel.servlet.url-patterns" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2022-11-23 11:40:49,077 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:40:49,078 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fkcivx1fiqjkhxbiwn8ev4twknx on table pedido_adicionais
+2022-11-23 11:40:49,088 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:40:49,088 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) drop cascades to constraint fke4qlc60yyr8y0l9lhnc3i2dxm on table pizza_ingredientes
+2022-11-23 11:40:49,093 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:40:49,094 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fkcivx1fiqjkhxbiwn8ev4twknx" of relation "pedido_adicionais" does not exist, skipping
+2022-11-23 11:40:49,098 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) SQL Warning Code: 0, SQLState: 00000
+2022-11-23 11:40:49,099 jmedeiro-mac pizza-store-dev.jar[38027] WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread: <default>) constraint "fke4qlc60yyr8y0l9lhnc3i2dxm" of relation "pizza_ingredientes" does not exist, skipping
+2022-11-23 11:40:49,297 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (Quarkus Main Thread) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-11-23 11:40:49,338 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread) Auto-configuration summary
+2022-11-23 11:40:49,348 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.mai.BaseMainSupport] (Quarkus Main Thread)     camel.rest.apiContextPath=/api/api-doc
+2022-11-23 11:40:49,860 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Routes startup (total:3 started:3)
+2022-11-23 11:40:49,862 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route1 (rest-api:///api/api-doc)
+2022-11-23 11:40:49,864 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route2 (rest://post:/api/pedidos)
+2022-11-23 11:40:49,865 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread)     Started route-create-pedido (direct://create-pedido)
+2022-11-23 11:40:49,867 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Quarkus Main Thread) Apache Camel 3.14.2.redhat-00047 (camel-1) started in 413ms (build:0ms init:119ms start:294ms)
+2022-11-23 11:40:50,215 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [io.quarkus] (Quarkus Main Thread) pizza-store 1.0.0 on JVM (powered by Quarkus 2.7.6.Final-redhat-00006) started in 13.449s. Listening on: http://localhost:8080
+2022-11-23 11:40:50,215 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-23 11:40:50,216 jmedeiro-mac pizza-store-dev.jar[38027] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, camel-attachments, camel-core, camel-direct, camel-jackson, camel-openapi-java, camel-platform-http, camel-rest, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, kubernetes, narayana-jta, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
